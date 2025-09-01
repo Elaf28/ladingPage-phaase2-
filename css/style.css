@@ -1,0 +1,146 @@
+:root{
+    --text-color: #545454;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fbfafa;
+}
+/* nav */
+nav{
+    background: #fbfafa;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+/* home */
+.home {
+    min-height: 100vh;
+    padding-top: 100px;
+}
+
+.home h1 {
+    font-size: 5rem;
+    line-height: 1.2;
+}
+
+.services-section .card-body {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.projects-section img {
+    max-width: 100%;
+}
+
+.icon-down{
+    background: black;
+    color: white;
+    padding: 25px 30px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.services-section-title::before {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 4px;
+    background-color: #000;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+.startProject-img::before{
+    content: "";
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    position:absolute;
+    top: 0;
+    left: 0;
+}
+.icon-image{
+    width: 60px;
+    height: 60px;
+}
+/*section-4 */
+
+.step-icon{
+    background: black;
+    padding: 9px 12px;
+    color: white;
+    border-radius: 50%;
+}
+.section-4 p{
+    color: var(--text-color);
+}
+.input-group{
+    background: white;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    border:-25px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 10;
+}
+.input-group input{
+    border: none;
+    outline: none;
+    font-size: 20px;
+    padding: 6px;
+}
+.input-group button{
+    background: black;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+/* ourCustomers */
+/* .ourCustomers-content{
+    background: url(../images/Mask\ group\ \(1\).png) no-repeat center center/contain;
+    background-position: top left; 
+    background-size:contain;
+} */
+/* footer */
+footer{
+    background: #000;
+    color:#D1D1D1;
+    
+}
+
+footer h6{
+    color: white;
+}
+footer a{
+    color:#D1D1D1;
+    text-decoration: none;
+}
+@media (max-width: 768px) {
+    .home h1 {
+        font-size: 2.5rem;
+    }
+    .input-group{
+        width: 100% !important;
+    }
+    .input-group button{
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+    .input-group input{
+    font-size: 16px;
+    padding: 3px;
+}
+}
